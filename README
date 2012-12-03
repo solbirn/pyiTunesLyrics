@@ -1,0 +1,37 @@
+About
+------
+pyiTunesLyrics in an application (or script) which will download and add missing lyrics to songs in an iTunes library.
+It is licensed under GPL v2. A copy of the license is included in this repository (see files: LICENSE and COPYING).
+
+The scapers are borrowed from the XBMC (xbmc.org) add-on CU Lyrics (script.cu.lyrics). Many thanks amet. 
+The license for CU Lyrics can be found here: https://github.com/amet/script.cu.lyrics/tree/eden/script.cu.lyrics in the file LICENSE.txt.
+
+Requirements
+-------------
+Currently, only Windows OS [XP+] (which includes support for the iTunes COM interface) is supported.
+Music on iCloud which has not been downloaded locally cannot be updated with new lyrics. [The iTunes COM interface doesn't support it.]
+It is currently GUI-less and Installer-less.
+
+The following software must be installed for the program to work:
+-iTunes (8.1+) [obviously]
+-Python (http://python.org) (Tested with 2.7 x86 and x64 builds)
+-pywin32 (http://sourceforge.net/projects/pywin32/ - Be sure it corresponds to the python build you have installed)
+
+Run
+----
+Run pyituneslyrics.py
+A file stats.txt will be created in the cwd once the process is done. It will contain statistics regarding on how many songs were updated.
+
+TODO
+-----
+-Proper error-handling/logging
+-OSX support
+-Threading
+-GUI
+-Installer
+-More scrappers
+-Option: Debug logging
+-Option: Replace all lyrics
+-Option: Replace lyrics which match regex/substring
+-Option?: Download artwork
+-Option?: Download iCloud songs and add lyrics
